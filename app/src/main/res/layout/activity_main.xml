@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
+        android:onClick="plus_3"
         android:text="+3 Point" />
 
     <Button
@@ -32,6 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
+        android:onClick="plus_2"
         android:text="+2 Point" />
 
     <Button
@@ -40,5 +42,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
+        android:onClick="plus_1"
         android:text="Free Throw" />
 </LinearLayout>
