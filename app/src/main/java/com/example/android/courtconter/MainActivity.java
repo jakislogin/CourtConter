@@ -79,4 +79,11 @@ public class MainActivity extends AppCompatActivity {
         team_b_score = team_b_score + 1;
         displayForTeamB(team_b_score);
     }
+
+    public void reset_scores(View view) {
+        team_a_score = 0;
+        team_b_score = 0;
+        displayForTeamA(team_a_score);
+        displayForTeamB(team_b_score);
+    }
 }
