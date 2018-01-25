@@ -8,6 +8,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     int team_a_score = 0;
+    int team_b_score = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,26 +25,58 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Adds 3 points
+     * Adds 3 points for A
      */
-    public void plus_3(View view) {
+    public void plus_3_a(View view) {
         team_a_score = team_a_score + 3;
         displayForTeamA(team_a_score);
     }
 
     /**
-     * Adds 2 points
+     * Adds 2 points for A
      */
-    public void plus_2(View view) {
+    public void plus_2_a(View view) {
         team_a_score = team_a_score + 2;
         displayForTeamA(team_a_score);
     }
 
     /**
-     * Adds 1 points
+     * Adds 1 points for A
      */
-    public void plus_1(View view) {
+    public void plus_1_a(View view) {
         team_a_score = team_a_score + 1;
         displayForTeamA(team_a_score);
+    }
+
+    /**
+     * Displays the given score for Team B.
+     */
+    public void displayForTeamB(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     * Adds 3 points for B
+     */
+    public void plus_3_b(View view) {
+        team_b_score = team_b_score + 3;
+        displayForTeamB(team_b_score);
+    }
+
+    /**
+     * Adds 2 points for B
+     */
+    public void plus_2_b(View view) {
+        team_b_score = team_b_score + 2;
+        displayForTeamB(team_b_score);
+    }
+
+    /**
+     * Adds 1 points for B
+     */
+    public void plus_1_b(View view) {
+        team_b_score = team_b_score + 1;
+        displayForTeamB(team_b_score);
     }
 }
